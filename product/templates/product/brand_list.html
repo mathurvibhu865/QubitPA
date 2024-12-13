@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Brand-List
+{% endblock %}
+
+{% block content %}
+
+{% for brand in brands %}
+
+    <h1>{{brand.name}}</h1>
+    <img src="{{brand.logo.url}}" alt="">
+    <p>{{brand.tagline}}</p>
+
+{% endfor %}
+
+{% endblock %} 
+
+
+
